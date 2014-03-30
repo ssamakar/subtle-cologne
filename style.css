@@ -3,6 +3,7 @@
 body {
 	margin: 0;
 	font-family: helvetica;
+	height: 100%;
 }
 
 #left {
@@ -21,24 +22,71 @@ body {
 	width: 125px;
 }
 
+#circle {
+	position: relative;
+	margin-left: 52px;
+	margin-top: 35px;
+	margin-bottom: 20px;
+	background-color: black;
+	border-radius: 100px;
+	height: 42px;
+	width: 42px;
+}
+
+#innercircle {
+	position: relative;
+	display: block;
+	text-indent: -9999px
+	background-color: black;
+	width: 26px;
+	height: 26px;
+	border: 3px solid white;
+	margin: 0 auto;
+	top: 5px;
+	border-radius: 100px;
+}
+
+#list {
+	position: relative;
+	display: block;
+	width: 97px;
+	padding-top: 5px;
+	list-style-type: none;
+
+}
+
+#list > li {
+	display: list-item;
+	line-height: 18px;
+	text-align: right;
+	margin: 0;
+	font-size: 15px;
+	-webkit-margin-after: 1em;
+	color: #acacac;
+}
+
 #blog {
 	float: left;
 	margin-left: 125px;
-	border-right: 1px solid #eee;
-	height: 100%;
+		border-right: 1px solid #eee;
+
 	}
 
-#media {
+.media {
 	width: 74%;
 	margin: 0 auto;
 }
 
-#media h1{
+.media > h1{
 	font-size: 50px;
 	padding-top: 30px;
 	padding-bottom: 34px;
 	margin: 0 auto;
 	text-transform: uppercase;
+}
+
+.media * {	
+	line-height: 1.5;
 }
 
 .article {
@@ -47,7 +95,25 @@ body {
 	border-bottom: 1px solid #e3e3e3;
 }
 
+.article > h1 {
+	font-size: 40px;
+	line-height: 40px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.article > h2 {
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	-webkit-margin-before: 0.84em;
+	-webkit-margin-after: 0.84em;
+	-webkit-margin-start: 0px;
+	-webtkit-margin-end: 0px;
+}
+
 #right {
+	height: 100%;
 }
 
 #links {
@@ -55,8 +121,10 @@ body {
 }
 
 #logobar {
-	border-left: 1px solid #eee;
-	width: 55px;
+	width: 54px;
 	height: 100%;
-	float: right;
+	position: fixed;
+	right: 0;
+	top: 0;
+	border-left: 1px solid #eee;
 }
