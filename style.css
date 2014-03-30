@@ -1,0 +1,62 @@
+/*e3#*/
+
+body {
+	margin: 0;
+	font-family: helvetica;
+}
+
+#left {
+	float: left;
+	width: 67%;
+	height: 100%;
+}
+
+#navbar {
+	float: left;
+	height: 100%;
+	border-right: 1px solid #eee;
+	position: fixed;
+	padding-left: 0px;
+	margin-left: 0px;
+	width: 125px;
+}
+
+#blog {
+	float: left;
+	margin-left: 125px;
+	border-right: 1px solid #eee;
+	height: 100%;
+	}
+
+#media {
+	width: 74%;
+	margin: 0 auto;
+}
+
+#media h1{
+	font-size: 50px;
+	padding-top: 30px;
+	padding-bottom: 34px;
+	margin: 0 auto;
+	text-transform: uppercase;
+}
+
+.article {
+	padding-bottom: 70px;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+#right {
+}
+
+#links {
+	width: 20%;
+}
+
+#logobar {
+	border-left: 1px solid #eee;
+	width: 55px;
+	height: 100%;
+	float: right;
+}
